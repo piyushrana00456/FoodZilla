@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+    <style>
+        #data{
+            width: 30%;
+            margin: auto; 
+            margin-top: 30px;
+        }
+        #data div img{
+            width: 100%;
+        }
+        #data div p{
+            font-size: 25px;
+          font-family: 'Lobster', cursive;
+
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script type="module">
+    import {navBar} from './component/navBar.js'
+    import{getdata,appenddata} from './script/showDish.js'
+   document.body.innerHTML=navBar()
+
+   let response=getdata('https://www.themealdb.com/api/json/v1/1/random.php')
+
+   response.then((data)=>{
+    console.log('data:',data);
+
+    let parent=document.getElementById('data')
+    appenddata(data,parent)
+
+   })
+</script>

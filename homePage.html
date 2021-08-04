@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style/style.css">
+     <style>
+    
+     </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="option">
+            <h3><a href="homePage.html">Search Your Dishes</a></h3>
+            <h3><a href="latest.html">Latest Meals</a></h3>
+            <h3><a href="receipe.html">Receipe Of The Day</a></h3>
+        </div>
+    
+        <div id="search">
+        <input oninput='throtle()' type="text" id="searchDish">
+        <span><img src="loupe.png" alt=""></a></span>
+        <div id="list">
+        </div>
+    </div>
+        <div id="acc">
+          <h3><a href="/">SignUp</a></h3>
+          <h3><a href="/">Login</a></h3>
+        </div>
+    </div> 
+    <div id='data'></div>
+</body>
+</html>
+<!-- <script type="module">
+    import {navBar} from './component/navBar.js'
+    import{getdata,appenddata} from './script/searchDish.js'
+   document.body.innerHTML=navBar()
+   
+   
+   let response=getdata(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`)
+    
+    response.then((data)=>{
+        console.log('data:',data);
+
+        let parent=document.getElementById('data')
+        appenddata(data,parent)
+    })
+
+  
+</script> -->
+<script src="./script/searchDish.js"></script>

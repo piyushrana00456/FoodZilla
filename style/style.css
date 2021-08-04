@@ -1,0 +1,97 @@
+body{
+ background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+}
+
+
+
+#navbar{
+    border-bottom: 1px solid #2cbe70;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% 0 5%;
+}
+#option{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 50%;
+}
+#acc{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 10%;
+}
+h3{
+color: black;
+}
+h3 a{
+   text-decoration: none;
+   font-family: 'Lobster', cursive;
+  color: black;
+
+}
+
+#search{
+    /* border: 1px solid red; */
+    width: 35%;
+    margin: auto;
+    margin-top: 15px;
+    height: 40px;
+    position: relative;
+}
+#search input{
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    outline: none;
+    border-radius: 50px;
+   font-family: 'Lobster', cursive;
+   background-color:inherit;
+   border: 1px solid #141106;
+   padding-left: 10px;
+    
+}
+#search span img{
+ position: absolute;
+ margin-top: 5px;
+ margin-left: -8%;
+ border-radius: 5px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#list{
+    /* border: 1px solid red; */
+    width: 80%;
+    max-height: 280px;
+    overflow-y:hidden;
+    /* overflow-x: hidden; */
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    z-index: 100002;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+#list li{
+    list-style: none;
+    padding: 8px;
+   font-family: 'Lobster', cursive;
+    font-size: 15px;
+    cursor: pointer;
+  
+}
+.homediv{
+    width: 30%;
+    margin: auto;
+    margin-top: 35px;
+}
+.homediv .searchMealImg{
+    width: 100%;
+
+} 
+.homediv .searchP{
+    text-align: center;
+   font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
