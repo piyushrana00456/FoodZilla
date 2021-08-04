@@ -37,9 +37,16 @@
      
     import {getdata,appenddata} from './script/showDish.js'
   document.body.innerHTML=navBar()
+  
+//    var arrFood=[Canadian,Indian,American,Chinese,Thai,Italian]
+//    var f=0;
+//     for(var i=0;i<arrFood.length;i++){
+//       f=arrFood[i];
+//     console.log(f);
 
+//     }
 
-    let response=getdata('https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian')
+    let response=getdata(`https://www.themealdb.com/api/json/v1/1/filter.php?a=American`)
     
     response.then((data)=>{
         console.log('data:',data);
